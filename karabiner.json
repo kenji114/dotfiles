@@ -16,63 +16,6 @@
                 },
                 "rules": [
                     {
-                        "description": "外付けキーボード（Logicool MxKeys）の半角全角を、英数・かなのトグルに変更する",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "ja"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "grave_accent_and_tilde",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "japanese_eisuu"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "language": "en"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "grave_accent_and_tilde",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "japanese_kana"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Citrix利用時：内蔵キーボードの右fnをCitrix先のWindowsにおけるIME ON/OFFのトグルにする",
                         "manipulators": [
                             {
@@ -87,6 +30,37 @@
                                 ],
                                 "from": {
                                     "apple_vendor_top_case_key_code": "keyboard_fn",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f9",
+                                        "modifiers": "left_control"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Citrix利用時：外付けキーボード（Logicool MxKeys）の半角全角をCitrix先のWindowsにおけるIME ON/OFFのトグルにする",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.citrix\\.XenAppViewer$",
+                                            "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "grave_accent_and_tilde",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -154,6 +128,63 @@
                                     {
                                         "key_code": "f11",
                                         "modifiers": "left_control"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "外付けキーボード（Logicool MxKeys）の半角全角を、英数・かなのトグルに変更する",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "ja"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "grave_accent_and_tilde",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "japanese_eisuu"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "language": "en"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "grave_accent_and_tilde",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "japanese_kana"
                                     }
                                 ],
                                 "type": "basic"
