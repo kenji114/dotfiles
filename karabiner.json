@@ -23,7 +23,8 @@
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.citrix\\.XenAppViewer$",
-                                            "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+                                            "^com\\.citrix\\.receiver\\.icaviewer\\.mac$",
+                                            "^com\\.microsoft\\.rdc\\.macos$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -54,7 +55,8 @@
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.citrix\\.XenAppViewer$",
-                                            "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+                                            "^com\\.citrix\\.receiver\\.icaviewer\\.mac$",
+                                            "^com\\.microsoft\\.rdc\\.macos$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -85,7 +87,8 @@
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.citrix\\.XenAppViewer$",
-                                            "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+                                            "^com\\.citrix\\.receiver\\.icaviewer\\.mac$",
+					    "^com\\.microsoft\\.rdc\\.macos$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -111,7 +114,8 @@
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.citrix\\.XenAppViewer$",
-                                            "^com\\.citrix\\.receiver\\.icaviewer\\.mac$"
+                                            "^com\\.citrix\\.receiver\\.icaviewer\\.mac$",
+                                            "^com\\.microsoft\\.rdc\\.macos$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -329,4 +333,4 @@
             }
         }
     ]
-}
+} 
